@@ -148,13 +148,19 @@ table {
 a {
   text-decoration: none; }
 
-body, html, home-page-container {
+body, html {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.home-page-container {
   display: flex;
   flex-direction: column;
   width: 100%; }
 
 .home-page__start {
-  min-height: 100vh; }
+  min-height: 100vh;
+  color: 259C8B; }
 
 .navbar-container {
   height: 5rem; }
