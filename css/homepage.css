@@ -1,20 +1,49 @@
 body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   font-family: 'Karla', serif; }
 
 .home-page-container {
   display: flex;
-  flex-direction: column;
-  width: 100%; }
+  flex-direction: column; }
 
 .home-page__start {
-  height: 100vh;
-  width: 100%;
-  color: #259C8B; }
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+
+.main-image {
+  background-color: #259C8B;
+  flex: 1; }
 
 .navbar-container {
-  height: 5rem; }
+  display: flex;
+  flex-direction: row;
+  height: 3rem; }
+
+.navbar__menu-container > ul {
+  display: flex;
+  flex-direction: row; }
+
+.main-description {
+  height: 35vh; }
+
+.main-description__left-column {
+  flex: 1; }
+
+.main-description__right-column {
+  flex: 1; }
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.home-page__section {
+  margin: 1rem; }
+
+.home-page__section > * {
+  margin: 1rem; }
+
+.footer {
+  background-color: #259C8B; }
 
 /*# sourceMappingURL=homepage.css.map */
