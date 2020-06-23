@@ -1,7 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Karla', serif; }
+  font-family: 'Karla', serif;
+  color: #666666; }
 
 .home-page-container {
   display: flex;
@@ -15,7 +16,7 @@ body {
 .main-image {
   display: flex;
   background-color: #259C8B;
-  flex: 1; }
+  flex: 1 0 60%; }
 
 .navbar-container {
   display: flex;
@@ -30,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 35vh; }
+  flex: 1 0 35%; }
 
 .main-description > * {
   display: flex;
@@ -39,26 +40,36 @@ body {
 
 .main-description__left-column {
   font-weight: 600;
-  font-size: 2rem; }
+  font-size: 1.7rem; }
+
+.main-description__right-column__text {
+  color: #666; }
 
 .main-description__right-column > * {
   display: flex;
   font-size: 1.5rem;
-  line-height: 1.5rem; }
+  line-height: 1.7rem; }
 
 .main-description__right-column__contact-link {
   display: flex;
-  margin: 1rem 0;
-  color: #259C8B; }
+  margin: 1rem 0; }
 
 .main-menu {
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  color: #1B1E1F; }
+
+.main-menu:hover {
+  text-shadow: -2px 2px 0px #E3CEC6; }
 
 .home-page__section {
   display: flex;
-  margin: 1rem; }
+  flex-direction: column;
+  margin: 1rem 0; }
 
 .home-page__section > * {
   display: flex; }
@@ -69,8 +80,47 @@ body {
   color: white;
   background-color: #259C8B; }
 
-.home-page__section {
+.home-page__section__header {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 2.5rem; }
+
+.services-container {
   display: flex;
   flex-direction: column; }
+
+.service__container {
+  display: flex; }
+
+.service__container--first {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #CFD7DC;
+  color: black; }
+
+.service__container--second {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black; }
+
+.service__container--third {
+  display: flex;
+  flex-direction: column;
+  background-color: #59C1B6;
+  color: white; }
+
+.service__header {
+  display: flex;
+  font-size: 2rem;
+  line-height: 2rem; }
+
+.service__description {
+  display: flex;
+  font-size: 1.3rem;
+  line-height: 1.5rem; }
 
 /*# sourceMappingURL=homepage.css.map */
