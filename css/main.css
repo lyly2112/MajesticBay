@@ -224,15 +224,10 @@ body {
 .home-page__section > * {
   display: flex; }
 
-.footer {
-  display: flex;
-  height: 35vh;
-  color: white;
-  background-color: #63687D; }
-
 .home-page__section__header {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
   font-weight: 600;
   font-size: 1.7rem;
   line-height: 2.5rem; }
@@ -278,5 +273,60 @@ body {
   display: flex;
   font-size: 1.3rem;
   line-height: 1.5rem; }
+
+.works-container {
+  display: flex;
+  flex-direction: column; }
+
+.works-container > * {
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  justify-content: center; }
+
+.project-image {
+  display: flex;
+  width: 20vh; }
+
+.about-container {
+  display: flex;
+  flex-direction: column; }
+
+.about-container__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: sflex-start; }
+
+.photo {
+  height: 10rem;
+  width: 10rem;
+  margin: 1rem; }
+
+.bio-container {
+  margin: 1rem;
+  line-height: 2.5rem; }
+
+.name {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.5rem; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 35vh;
+  padding: 5rem;
+  color: white;
+  background-color: #63687D; }
+
+.footer__header {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 2.5rem; }
 
 /*# sourceMappingURL=main.css.map */
