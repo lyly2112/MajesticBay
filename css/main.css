@@ -279,24 +279,18 @@ body {
   flex-direction: column; }
 
 .work-container__row {
-  display: flex;
-  margin: 5rem; }
-  .work-container__row:nth-child(1) {
-    flex-direction: row; }
-  .work-container__row:nth-child(2) {
-    flex-direction: row-reverse; }
-  .work-container__row:nth-child(3) {
-    flex-direction: row; }
+  display: flex; }
 
 .project-image {
   display: flex;
   flex-direction: row;
   height: 30rem;
-  width: 70%;
   position: relative; }
 
 .project-decription {
   display: flex;
+  height: 15rem;
+  width: 70%;
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -159,33 +159,21 @@ body {
 
 .work-container__row {
     display: flex;
-    margin: 5rem;
 
-    &:nth-child(1) {
-        flex-direction: row;
-    }
-
-    &:nth-child(2) {
-        flex-direction: row-reverse;
-    }
-
-    &:nth-child(3) {
-        flex-direction: row;
-    }
 }
 
 .project-image {
     display: flex;
     flex-direction: row;
     height: 30rem;
-    width: 70%;
     position: relative;
 }
 
 .project-decription {
     display: flex;
+    height: 15rem;
+    width: 70%;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     background-color: yellow;
