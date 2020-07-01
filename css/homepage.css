@@ -50,15 +50,13 @@ body {
 
 .main-description__text {
   display: flex;
-  text-align: justify;
-  font-size: 1.5rem; }
+  text-align: justify; }
 
 .main-menu {
   display: flex;
   flex-direction: column;
   text-align: center;
   font-weight: 600;
-  font-size: 1.7rem;
   line-height: 2.5rem;
   color: #1B1E1F; }
 
@@ -74,12 +72,13 @@ body {
   display: flex;
   flex-direction: column;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 2.5rem;
   justify-content: center;
   text-align: center;
   color: #3b99e0 !important;
-  margin: 1rem; }
+  margin: 1rem;
+  text-transform: uppercase; }
 
 .home-page-section__text {
   display: flex;
@@ -92,7 +91,6 @@ body {
   flex-direction: column;
   text-align: center;
   background-color: #f6f6f6;
-  color: black;
   padding: 5rem; }
 
 .services-container__internal {
@@ -106,10 +104,10 @@ body {
 
 .container-header {
   display: flex;
-  font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 600;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  justify-content: center; }
 
 .services-container__row {
   display: flex;
@@ -121,11 +119,10 @@ body {
 
 .service-description {
   display: flex;
-  text-align: justify; }
+  text-align: center; }
 
 .internal-description {
   display: flex;
-  font-size: 1.3rem;
   line-height: 1.5rem; }
 
 .works-container {
@@ -177,6 +174,18 @@ body {
   text-decoration: none;
   text-align: center; }
 
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15rem;
+  background-color: #f6f6f6; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
 .about-container {
   display: flex;
   flex-direction: column; }
@@ -194,8 +203,7 @@ body {
 
 .bio-container {
   display: flex;
-  flex-direction: column;
-  line-height: 2.5rem; }
+  flex-direction: column; }
 
 .bio {
   display: flex;
