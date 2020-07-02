@@ -299,7 +299,12 @@ body {
 
 .project-image {
   display: flex;
-  width: 20rem; }
+  width: 100%; }
+
+.project-header {
+  display: flex;
+  font-weight: 400;
+  font-size: 2.5rem; }
 
 .project-description__text {
   display: flex; }
@@ -322,7 +327,8 @@ body {
   touch-action: manipulation;
   cursor: pointer;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  margin: 1rem 0; }
 
 .contact-section {
   display: flex;
@@ -339,7 +345,7 @@ body {
   line-height: 0.5rem; }
 
 .contact-form > * {
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: .3rem; }
 
 .about-container {
@@ -349,26 +355,16 @@ body {
 
 .about-container__row {
   display: flex;
-  flex-direction: column; }
-
-.photo {
-  display: flex;
-  margin: auto;
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%; }
-
-.bio-container {
-  display: flex;
-  flex-direction: column; }
-
-.bio {
-  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.075);
+  border-radius: 3px;
   text-align: center;
-  margin: 1rem; }
+  align-items: center; }
 
-.role {
-  margin: 1rem; }
+.about-container__photo {
+  display: flex;
+  max-width: fit-content; }
 
 .footer {
   display: flex;
@@ -396,6 +392,7 @@ body {
 .contact-button {
   display: flex;
   justify-content: center;
+  margin: 1rem 0;
   border: 1px solid white;
   color: white;
   font-size: 1.25rem;
