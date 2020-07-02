@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     height: 100%;
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
 
 }
 
@@ -65,7 +65,7 @@ body {
 
 .main-description__text {
     display: flex;
-    text-align: justify;
+    text-align: center;
 }
 
 .main-menu {
@@ -110,7 +110,6 @@ body {
 .services-container {
     display: flex;
     flex-direction: column;
-    text-align: center;
     background-color: #f6f6f6;
     padding: 5rem;
 }
@@ -154,7 +153,6 @@ body {
 
 .internal-description {
     display: flex;
-    line-height: 1.5rem;
 }
 
 .works-container {
@@ -166,6 +164,24 @@ body {
 .work-container__row {
     display: flex;
     flex-direction: column;
+    &:nth-child(1) {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    }
+    &:nth-child(2) {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    }
+    &:nth-child(3) {
+        display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    }
 }
 
 .project-image {
@@ -173,22 +189,8 @@ body {
     width: 20rem;
 }
 
-.project-decription--odd {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
-}
-
 .project-description__text {
     display: flex;
-}
-
-.project-decription--even {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: end;
 }
 
 .project-button {
@@ -199,7 +201,6 @@ body {
     background-color: white;
     color: #3b99e0;
     font-size: 1.25rem;
-    line-height: 1.5;
     letter-spacing: 1.5px;
     border-radius: .3rem;
     font-weight: 900;
@@ -217,19 +218,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 15rem;
     background-color: #f6f6f6;
+    padding: 5rem 0;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 0 5rem;
+    line-height: 0.5rem;
+}
+
+.contact-form > * {
+    padding: 2rem;
+    border-radius: .3rem;
 }
 
 .about-container {
     display: flex;
     flex-direction: column;
+    margin: 5rem;
 }
 
 .about-container__row {
@@ -252,7 +261,7 @@ body {
 
 .bio {
     display: flex;
-    text-align: justify;
+    text-align: center;
     margin: 1rem;
 }
 
@@ -291,14 +300,11 @@ body {
 .contact-button {
     display: flex;
     justify-content: center;
-    margin: 2rem;
-    width: 6rem;
-    border: 1px solid black;
-    background-color: white;
-    color: #666666;
-    font-size: 0.5rem;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.25rem;
     letter-spacing: 1.5px;
-    border-radius: 20px;
+    border-radius: .3rem;
     font-weight: 900;
     text-shadow: none;
     transition: all 150ms ease-in;
@@ -311,6 +317,5 @@ body {
 }
 
 .contact-button:hover {
-    background-color: black;
-    color: white;
+
 }

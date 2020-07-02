@@ -29,7 +29,7 @@ applet,
 object,
 iframe,
 h1,
-h2,
+h1,
 h3,
 h4,
 h5,
@@ -156,7 +156,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   font-size: 1.5rem;
-  line-height: 1.5rem; }
+  line-height: 1.5; }
 
 .home-page-container {
   display: flex;
@@ -200,7 +200,7 @@ body {
 
 .main-description__text {
   display: flex;
-  text-align: justify; }
+  text-align: center; }
 
 .main-menu {
   display: flex;
@@ -239,7 +239,6 @@ body {
 .services-container {
   display: flex;
   flex-direction: column;
-  text-align: center;
   background-color: #f6f6f6;
   padding: 5rem; }
 
@@ -272,8 +271,7 @@ body {
   text-align: center; }
 
 .internal-description {
-  display: flex;
-  line-height: 1.5rem; }
+  display: flex; }
 
 .works-container {
   display: flex;
@@ -283,25 +281,28 @@ body {
 .work-container__row {
   display: flex;
   flex-direction: column; }
+  .work-container__row:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start; }
+  .work-container__row:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end; }
+  .work-container__row:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start; }
 
 .project-image {
   display: flex;
   width: 20rem; }
 
-.project-decription--odd {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: start; }
-
 .project-description__text {
   display: flex; }
-
-.project-decription--even {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: end; }
 
 .project-button {
   display: flex;
@@ -311,7 +312,6 @@ body {
   background-color: white;
   color: #3b99e0;
   font-size: 1.25rem;
-  line-height: 1.5;
   letter-spacing: 1.5px;
   border-radius: .3rem;
   font-weight: 900;
@@ -328,17 +328,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 15rem;
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  padding: 5rem 0; }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  margin: 0 5rem;
+  line-height: 0.5rem; }
+
+.contact-form > * {
+  padding: 2rem;
+  border-radius: .3rem; }
 
 .about-container {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 5rem; }
 
 .about-container__row {
   display: flex;
@@ -357,7 +364,7 @@ body {
 
 .bio {
   display: flex;
-  text-align: justify;
+  text-align: center;
   margin: 1rem; }
 
 .role {
@@ -389,14 +396,11 @@ body {
 .contact-button {
   display: flex;
   justify-content: center;
-  margin: 2rem;
-  width: 6rem;
-  border: 1px solid black;
-  background-color: white;
-  color: #666666;
-  font-size: 0.5rem;
+  border: 1px solid white;
+  color: white;
+  font-size: 1.25rem;
   letter-spacing: 1.5px;
-  border-radius: 20px;
+  border-radius: .3rem;
   font-weight: 900;
   text-shadow: none;
   transition: all 150ms ease-in;
@@ -406,9 +410,5 @@ body {
   cursor: pointer;
   text-decoration: none;
   text-align: center; }
-
-.contact-button:hover {
-  background-color: black;
-  color: white; }
 
 /*# sourceMappingURL=main.css.map */
