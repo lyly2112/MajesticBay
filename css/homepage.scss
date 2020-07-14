@@ -13,8 +13,9 @@ body {
 
 .main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+    margin: 1rem;
 }
 
 // NAVBAR
@@ -73,12 +74,6 @@ body {
     justify-content: space-between;
 }
 
-.navbar-container>.logo {
-    display: flex;
-    width: 3rem;
-    height: 3rem;
-}
-
 .navbar__menu-container>ul {
     display: flex;
     flex-direction: row;
@@ -106,12 +101,11 @@ body {
 .home-page__header {
     display: flex;
     color: #3b99e0;
-    font-size: 3rem;
+    font-size: 2.2rem;
     letter-spacing: 1.5px;
     font-weight: 900;
     text-transform: uppercase;
-    margin: 1rem 0;
-    width: 10rem; 
+    flex: 1 0 90%;
 }
 
 .main-image {
@@ -122,17 +116,19 @@ body {
 
 .main-header {
     display: flex;
+    justify-content: center;    
     color: #3b99e0;
+    font-size: 1.5rem;
 }
-
-
 
 .main-description {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 5rem;
+    margin: 0 1rem;
     align-items: center;
+    font-size: 1rem;
+
 
 }
 
