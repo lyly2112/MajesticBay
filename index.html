@@ -12,6 +12,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./images/favicon.ico">
     <script src="./js/toggleMenu.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript" src="./js/send-email.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_xDZ9esqmDSPEDBBpAHYhJ");
+       })();
+    </script>
 </head>
 
 <body>
@@ -36,16 +44,16 @@
                             </div>
                         </div>
                         <ul id="mobile-menu-list" class="navbar-mobile__navbar-list">
-                            <a href="#services-container">
+                            <a onclick="closeMenu()" href="#services-container">
                                 <li class="navbar-list__navbar-item">services</li>
                             </a>
-                            <a href="#works-container">
+                            <a onclick="closeMenu()" href="#works-container">
                                 <li class="navbar-list__navbar-item">our works</li>
                             </a>
-                            <a href="#contact-container">
+                            <a onclick="closeMenu()" href="#contact-container">
                                 <li class="navbar-list__navbar-item">contact</li>
                             </a>
-                            <a href="#about-container">
+                            <a onclick="closeMenu()" href="#about-container">
                                 <li class="navbar-list__navbar-item">about us</li>
                             </a>
                         </ul>
@@ -205,14 +213,15 @@
         <div class="home-page__section">
             <div id="contact-container">
                 <h1 class="home-page-section__header">Contact us</h1>
-                <form class="contact-form">
+                <form id="contactform" class="contact-form">
                     <input type="text" id="name" name="name" placeholder="name"><br>
                     <input type="tel" id="phone" name="phone" placeholder="phone"><br>
-                    <input type="email" id="email" name="email" placeholder="email"><br>
+                    <input type="email" id="email" name="reply_to" placeholder="email"><br>
                     <textarea name="message">message</textarea>
                 </form>
                 <div class="send-button">send</div>
             </div>
+  
         </div>
         <div id="about-container">
             <h1 class="home-page-section__header">About us</h1>

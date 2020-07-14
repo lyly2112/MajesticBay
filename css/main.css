@@ -522,7 +522,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 35vh;
+  height: 20rem;
   padding: 3rem;
   color: white;
   background-color: #63687D;
