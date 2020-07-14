@@ -8,8 +8,8 @@ body {
   font-size: 1.5rem;
   line-height: 1.5; }
 
-.p-16 {
-  padding: 16px; }
+.navbar-mobile__menu-opener {
+  cursor: pointer; }
 
 .home-page-container {
   display: flex;
@@ -331,5 +331,28 @@ body {
 
 .about-icon {
   height: 2rem; }
+
+.close {
+  background: white;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  cursor: pointer; }
+
+.close:after {
+  content: '';
+  height: 60px;
+  border-left: 2px solid #3b99e0;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 28px; }
+
+.close:before {
+  content: '';
+  height: 60px;
+  border-left: 2px solid #3b99e0;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 28px; }
 
 /*# sourceMappingURL=homepage.css.map */

@@ -19,42 +19,42 @@
 
     <div class="home-page-container">
         <div class="home-page__start-screen">
-            
-                <div class="navbar-container">
+
+            <div class="navbar-container">
                 <h1 class=home-page__header>Majestic Bay</h1>
                 <div class="main">
                     <nav class="navbar-mobile__menu-opener">
-                        <svg class ="bars-menu" viewBox="0 0 100 80" width="40" height="40">
+                        <svg class="bars-menu" viewBox="0 0 100 80" width="40" height="40"
+                            alt="open mobile menu button (click to open mobile menu)" onclick="openMenu()">
                             <rect width="100" height="20"></rect>
                             <rect y="30" width="100" height="20"></rect>
                             <rect y="60" width="100" height="20"></rect>
-                          </svg>                </nav>
+                        </svg>
+                    </nav>
                     <nav id="mobile-menu" class="navbar-mobile">
                         <div class="navbar-mobile__top">
-                            <div class="cross pointer" onclick="closeMenu()">
-                                <p class="cross__line cross__top"></p>
-                                <p class="cross__line cross__bottom"></p>
+                            <div class="close" onclick="closeMenu()">
                             </div>
                         </div>
                         <ul id="mobile-menu-list" class="navbar-mobile__navbar-list">
                             <a href="#services-container">
-                                <li class="navbar-list__navbar-item pointer pv-20">services</li>
+                                <li class="navbar-list__navbar-item">services</li>
                             </a>
                             <a href="#works-container">
-                                <li class="navbar-list__navbar-item pointer pv-20">our works</li>
+                                <li class="navbar-list__navbar-item">our works</li>
                             </a>
                             <a href="#contact-container">
-                                <li class="navbar-list__navbar-item pointer pv-20">contact</li>
+                                <li class="navbar-list__navbar-item">contact</li>
                             </a>
                             <a href="#about-container">
-                                <li class="navbar-list__navbar-item pointer pv-20">about us</li>
-                            </a>        
+                                <li class="navbar-list__navbar-item">about us</li>
+                            </a>
                         </ul>
                     </nav>
-                    </div>
+                </div>
             </div>
             <h1 class="main-header">we create web sites for you</h1>
-            
+
             <img class="main-image" src="src/images/main-image.svg">
             <div class="main-description">
                 <h1 class="home-page-section__header">Who we are</h1>
@@ -70,188 +70,202 @@
         </div>
 
 
-    <div class="home-page__section">
+        <div class="home-page__section">
 
-        <div id="services-container">
-            <h1 class="home-page-section__header">Services</h1>
-            <div class="services-container__internal">
-                <div class="services-container__row">
-                    <div class="services-container__column">
-                        <svg viewBox="0 0 16 16" class="bi bi-people" fill="#3b99e0" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.995-.944v-.002.002zM7.022 13h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zm7.973.056v-.002.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-                          </svg>
-                        <div class="service-container">
-                            <h1 class="container-header">
-                                More than just developers, we’re partners</h1>
-                            <p class="service-description">
-                                We’re not satisfied with delivering the bare-minimum against a brief. That just doesn’t
-                                cut it for
-                                us.
-                                We take the time to work with you to plan and develop sustainable, long-term solutions.
-                            </p>
+            <div id="services-container">
+                <h1 class="home-page-section__header">Services</h1>
+                <div class="services-container__internal">
+                    <div class="services-container__row">
+                        <div class="services-container__column">
+                            <svg viewBox="0 0 16 16" class="bi bi-people" fill="#3b99e0"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.995-.944v-.002.002zM7.022 13h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zm7.973.056v-.002.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                            </svg>
+                            <div class="service-container">
+                                <h1 class="container-header">
+                                    More than just developers, we’re partners</h1>
+                                <p class="service-description">
+                                    We’re not satisfied with delivering the bare-minimum against a brief. That just
+                                    doesn’t
+                                    cut it for
+                                    us.
+                                    We take the time to work with you to plan and develop sustainable, long-term
+                                    solutions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services-container__column">
+                            <svg viewBox="0 0 16 16" class="bi bi-hand-thumbs-up" fill="#3b99e0"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16v-1c.563 0 .901-.272 1.066-.56a.865.865 0 0 0 .121-.416c0-.12-.035-.165-.04-.17l-.354-.354.353-.354c.202-.201.407-.511.505-.804.104-.312.043-.441-.005-.488l-.353-.354.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581 0-.211-.027-.414-.075-.581-.05-.174-.111-.273-.154-.315L12.793 9l.353-.354c.353-.352.373-.713.267-1.02-.122-.35-.396-.593-.571-.652-.653-.217-1.447-.224-2.11-.164a8.907 8.907 0 0 0-1.094.171l-.014.003-.003.001a.5.5 0 0 1-.595-.643 8.34 8.34 0 0 0 .145-4.726c-.03-.111-.128-.215-.288-.255l-.262-.065c-.306-.077-.642.156-.667.518-.075 1.082-.239 2.15-.482 2.85-.174.502-.603 1.268-1.238 1.977-.637.712-1.519 1.41-2.614 1.708-.394.108-.62.396-.62.65v4.002c0 .26.22.515.553.55 1.293.137 1.936.53 2.491.868l.04.025c.27.164.495.296.776.393.277.095.63.163 1.14.163h3.5v1H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                            </svg>
+                            <div class="service-container">
+                                <h1 class="container-header">
+                                    Leverage a team built to scale with you</h1>
+                                <p class="service-description">
+                                    Building a development team is hard. We’ve experienced it first hand and have used
+                                    our
+                                    expertise to
+                                    build and grow one of the friendly development teams in the Greater Seattle.
+                                    Whatever
+                                    your
+                                    requirements,
+                                    our team is built to deliver projects at any scale and with a varied mixture of
+                                    popular
+                                    development
+                                    stacks. </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="services-container__column">
-                        <svg viewBox="0 0 16 16" class="bi bi-hand-thumbs-up" fill="#3b99e0" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16v-1c.563 0 .901-.272 1.066-.56a.865.865 0 0 0 .121-.416c0-.12-.035-.165-.04-.17l-.354-.354.353-.354c.202-.201.407-.511.505-.804.104-.312.043-.441-.005-.488l-.353-.354.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581 0-.211-.027-.414-.075-.581-.05-.174-.111-.273-.154-.315L12.793 9l.353-.354c.353-.352.373-.713.267-1.02-.122-.35-.396-.593-.571-.652-.653-.217-1.447-.224-2.11-.164a8.907 8.907 0 0 0-1.094.171l-.014.003-.003.001a.5.5 0 0 1-.595-.643 8.34 8.34 0 0 0 .145-4.726c-.03-.111-.128-.215-.288-.255l-.262-.065c-.306-.077-.642.156-.667.518-.075 1.082-.239 2.15-.482 2.85-.174.502-.603 1.268-1.238 1.977-.637.712-1.519 1.41-2.614 1.708-.394.108-.62.396-.62.65v4.002c0 .26.22.515.553.55 1.293.137 1.936.53 2.491.868l.04.025c.27.164.495.296.776.393.277.095.63.163 1.14.163h3.5v1H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"/>
-                          </svg>
-                        <div class="service-container">
-                            <h1 class="container-header">
-                                Leverage a team built to scale with you</h1>
-                            <p class="service-description">
-                                Building a development team is hard. We’ve experienced it first hand and have used our
-                                expertise to
-                                build and grow one of the friendly development teams in the Greater Seattle. Whatever
-                                your
-                                requirements,
-                                our team is built to deliver projects at any scale and with a varied mixture of popular
-                                development
-                                stacks. </p>
+                    <div class="services-container__row">
+                        <div class="services-container__column">
+                            <svg viewBox="0 0 16 16" class="bi bi-phone" fill="#3b99e0"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                                <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>
+                            <div class="service-container">
+                                <h1 class="container-header">
+                                    We solve complex problems using cutting-edge technologies</h1>
+                                <p class="service-description">
+                                    From distributed ledger technologies and highly scalable serverless deployments, to
+                                    virtual and
+                                    augmented reality, we work at the limit of what is possible. Using a combination of
+                                    research,
+                                    analysis,
+                                    strategy, development and design, our team combines these technologies with a
+                                    thorough
+                                    plan of
+                                    execution. </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="services-container__row">
-                    <div class="services-container__column">
-                        <svg viewBox="0 0 16 16" class="bi bi-phone"
-                            fill="#3b99e0" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
-                            <path fill-rule="evenodd" d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-                        </svg>
-                        <div class="service-container">
-                            <h1 class="container-header">
-                                We solve complex problems using cutting-edge technologies</h1>
-                            <p class="service-description">
-                                From distributed ledger technologies and highly scalable serverless deployments, to
-                                virtual and
-                                augmented reality, we work at the limit of what is possible. Using a combination of
-                                research,
-                                analysis,
-                                strategy, development and design, our team combines these technologies with a thorough
-                                plan of
-                                execution. </p>
-                        </div>
-                    </div>
-                    <div class="services-container__column">
-                        <svg viewBox="0 0 16 16" class="bi bi-star"
-                            fill="#3b99e0" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
-                        </svg>
-                        <div class="service-container">
-                            <h1 class="container-header">Hardwork</h1>
-                            <p class="service-description">Our team's principle is to invest time and effort as much as
-                                possible into every
-                                single of our projects.</p>
+                        <div class="services-container__column">
+                            <svg viewBox="0 0 16 16" class="bi bi-star" fill="#3b99e0"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                            <div class="service-container">
+                                <h1 class="container-header">Hardwork</h1>
+                                <p class="service-description">Our team's principle is to invest time and effort as much
+                                    as
+                                    possible into every
+                                    single of our projects.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="home-page__section">
-        <div id="works-container">
+        <div class="home-page__section">
+            <div id="works-container">
 
-        <h1 class="home-page-section__header">Our works</h1>
-        <p class="home-page-section__text">We use the most recent and updated technologies, and keep learning and
-            improving. Always.</p>
-            <div class="work-container__row">
-                <img class="project-image" src="./src/images/leafsdeli.jpg" alt="Leaf's Deli">
-                <h1 class="project-header">Leaf's Deli</h1>
-                <p class="project-description__text">Leaf’s Deli is a family owned cafe business that has been serving
-                    Auburn for more than 40 years.</p>
-                <div class="project-button">
-                    <a href="https://leafsdeli.com/" target="_blank">Visit</a>
+                <h1 class="home-page-section__header">Our works</h1>
+                <p class="home-page-section__text">We use the most recent and updated technologies, and keep learning
+                    and
+                    improving. Always.</p>
+                <div class="work-container__row">
+                    <img class="project-image" src="./src/images/leafsdeli.jpg" alt="Leaf's Deli">
+                    <h1 class="project-header">Leaf's Deli</h1>
+                    <p class="project-description__text">Leaf’s Deli is a family owned cafe business that has been
+                        serving
+                        Auburn for more than 40 years.</p>
+                    <div class="project-button">
+                        <a href="https://leafsdeli.com/" target="_blank">Visit</a>
+                    </div>
+
+                </div>
+                <div class="work-container__row">
+                    <img class="project-image" src="./src/images/flex-trans.png" alt="Leaf's Deli">
+                    <h1 class="project-header">Flex-Trans</h1>
+                    <p class="project-description__text">Flex-Trans provide transportation on fully equipped and
+                        inspected
+                        wheelchair van.</p>
+                    <div class="project-button">
+                        <a href="https://flex-trans.com/" target="_blank">Visit</a>
+                    </div>
+
+                </div>
+                <div class="work-container__row">
+                    <img class="project-image" src="./src/images/nikiforov.jpg" alt="Leaf's Deli">
+                    <h1 class="project-header">Photographer Website</h1>
+                    <p class="project-description__text">Photographer's Website</p>
+                    <div class="project-button">
+                        <a href="https://nikiforov.netlify.app/" target="_blank">Visit</a></div>
+
                 </div>
 
             </div>
-            <div class="work-container__row">
-                <img class="project-image" src="./src/images/flex-trans.png" alt="Leaf's Deli">
-                <h1 class="project-header">Flex-Trans</h1>
-                <p class="project-description__text">Flex-Trans provide transportation on fully equipped and inspected
-                    wheelchair van.</p>
-                <div class="project-button">
-                    <a href="https://flex-trans.com/" target="_blank">Visit</a>
-                </div>
-
-            </div>
-            <div class="work-container__row">
-                <img class="project-image" src="./src/images/nikiforov.jpg" alt="Leaf's Deli">
-                <h1 class="project-header">Photographer Website</h1>
-                <p class="project-description__text">Photographer's Website</p>
-                <div class="project-button">
-                    <a href="https://nikiforov.netlify.app/" target="_blank">Visit</a></div>
-
-            </div>
-
         </div>
-    </div>
-    <div class="home-page__section">
-        <div id="contact-container">
-            <h1 class="home-page-section__header">Contact us</h1>
-            <form class="contact-form">
-                <input type="text" id="name" name="name" placeholder="name"><br>
-                <input type="tel" id="phone" name="phone" placeholder="phone"><br>
-                <input type="email" id="email" name="email" placeholder="email"><br>
-                <textarea name="message">message</textarea>
-            </form>
-            <div class="send-button">send</div>
-        </div>
-    </div>
-    <div id="about-container">
-        <h1 class="home-page-section__header">About us</h1>
-        <div class="about-container__rows">
-            <div class="about-container__row">
-                <img class="about-container__photo" src="src/images/liliya.jpg" alt="liliya">
-                <h1 class="about-container__name">Liliya Sherstobitova</h1>
-                <div class="about-container__links">
-                    <a href="https://www.linkedin.com/in/liliya-sherstobitova-322a4b125/" target="_blank">
-                    <img class="about-icon" src="src/images/icons/linkedin.svg" />
-
-                    </a>
-                    <a href="https://github.com/lyly2112" target="_blank">
-                    <img class="about-icon" src="src/images/icons/git.svg">
-                    </a>
-                </div>
+        <div class="home-page__section">
+            <div id="contact-container">
+                <h1 class="home-page-section__header">Contact us</h1>
+                <form class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="name"><br>
+                    <input type="tel" id="phone" name="phone" placeholder="phone"><br>
+                    <input type="email" id="email" name="email" placeholder="email"><br>
+                    <textarea name="message">message</textarea>
+                </form>
+                <div class="send-button">send</div>
             </div>
-            <div class="about-container__row">
-                <img class="about-container__photo" src="src/images/sergey.png" alt="liliya">
-                <h1 class="about-container__name">Sergey Sherstobitov</h1>
-                <div class="about-container__links">
-                    <a href="https://www.linkedin.com/in/sergey-sherstobitov/" target="_blank">
-                        <img class="about-icon" src="src/images/icons/linkedin.svg">
-                    </a>
-                    <a href="https://github.com/in43sh" target="_blank">
-                        <img class="about-icon" src="src/images/icons/git.svg">
-                    </a>
-                    <a href="https://sherstobitov.us/" target="_blank">
-                        <img class="about-icon" src="src/images/icons/profile.svg">
-                    </a>
+        </div>
+        <div id="about-container">
+            <h1 class="home-page-section__header">About us</h1>
+            <div class="about-container__rows">
+                <div class="about-container__row">
+                    <img class="about-container__photo" src="src/images/liliya.jpg" alt="liliya">
+                    <h1 class="about-container__name">Liliya Sherstobitova</h1>
+                    <div class="about-container__links">
+                        <a href="https://www.linkedin.com/in/liliya-sherstobitova-322a4b125/" target="_blank">
+                            <img class="about-icon" src="src/images/icons/linkedin.svg" />
+
+                        </a>
+                        <a href="https://github.com/lyly2112" target="_blank">
+                            <img class="about-icon" src="src/images/icons/git.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="about-container__row">
+                    <img class="about-container__photo" src="src/images/sergey.png" alt="liliya">
+                    <h1 class="about-container__name">Sergey Sherstobitov</h1>
+                    <div class="about-container__links">
+                        <a href="https://www.linkedin.com/in/sergey-sherstobitov/" target="_blank">
+                            <img class="about-icon" src="src/images/icons/linkedin.svg">
+                        </a>
+                        <a href="https://github.com/in43sh" target="_blank">
+                            <img class="about-icon" src="src/images/icons/git.svg">
+                        </a>
+                        <a href="https://sherstobitov.us/" target="_blank">
+                            <img class="about-icon" src="src/images/icons/profile.svg">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-  
-    <div class="footer">
-        <div class="footer__column">
-            <h1 class="footer__header">
-                <span>Let's make</span>
-                <span>things happen!</span>
-            </h1>
-            <a href="#contact-container">
-                <div class="footer__contact-button">contact us</div>
-            </a>
-        </div>
-        <div class="footer__column">
-            <div class="footer__company-description">
-                <p>© 2020 MAJESTIC BAY</p>
-                <p>UX DESIGN | WEB DESIGN | APP DEVELOPMENT</p>
+
+        <div class="footer">
+            <div class="footer__column">
+                <h1 class="footer__header">
+                    <span>Let's make</span>
+                    <span>things happen!</span>
+                </h1>
+                <a href="#contact-container">
+                    <div class="footer__contact-button">contact us</div>
+                </a>
             </div>
-        </div>
+            <div class="footer__column">
+                <div class="footer__company-description">
+                    <p>© 2020 MAJESTIC BAY</p>
+                    <p>UX DESIGN | WEB DESIGN | APP DEVELOPMENT</p>
+                </div>
+            </div>
 
+        </div>
     </div>
-</div>
 
 
 </body>
