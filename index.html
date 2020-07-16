@@ -12,7 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./images/favicon.ico">
     <script src="./js/toggleMenu.js"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript" src="./js/send-email.js"></script>
     <script type="text/javascript">
@@ -20,6 +21,7 @@
           emailjs.init("user_xDZ9esqmDSPEDBBpAHYhJ");
        })();
     </script>
+    -->
 </head>
 
 <body>
@@ -170,46 +172,64 @@
                 </div>
             </div>
         </div>
-        <div class="home-page__section">
-            <div id="works-container">
-
-                <h1 class="home-page-section__header">Our works</h1>
-                <p class="home-page-section__text">We use the most recent and updated technologies, and keep learning
-                    and
-                    improving. Always.</p>
+        <div class="home-page__section" id="works-container">
+            <h1 class="home-page-section__header">Our works</h1>
+            <p class="home-page-section__text">We use the most recent and updated technologies, and keep learning
+                and
+                improving. Always.</p>
+            <div class="work-container__rows">
                 <div class="work-container__row">
-                    <img class="project-image" src="./src/images/leafsdeli.jpg" alt="Leaf's Deli">
-                    <h1 class="project-header">Leaf's Deli</h1>
-                    <p class="project-description__text">Leaf’s Deli is a family owned cafe business that has been
-                        serving
-                        Auburn for more than 40 years.</p>
-                    <div class="project-button">
-                        <a href="https://leafsdeli.com/" target="_blank">Visit</a>
+                    <div class="work-container__row__column">
+                        <img class="project-image" src="./src/images/leafsdeli.jpg" alt="Leaf's Deli">
+                    </div>
+                    <div class="work-container__row__column">
+                        <h1 class="project-header">Leaf's Deli</h1>
+                        <p class="project-description__text">Leaf’s Deli is a family owned cafe business that has been
+                            serving
+                            Auburn for more than 40 years.</p>
+                        <div class="project-button">
+                            <a href="https://leafsdeli.com/" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-container__row">
+                    <div class="work-container__row__column">
+                        <img class="project-image" src="./src/images/flex-trans.png" alt="Leaf's Deli">
+
+                    </div>
+                    <div class="work-container__row__column">
+                        <h1 class="project-header">Flex-Trans</h1>
+                        <p class="project-description__text">Flex-Trans provide transportation on fully equipped and
+                            inspected
+                            wheelchair van.</p>
+                        <div class="project-button">
+                            <a href="https://flex-trans.com/" target="_blank">Visit</a>
+                        </div>
                     </div>
 
+
+
                 </div>
                 <div class="work-container__row">
-                    <img class="project-image" src="./src/images/flex-trans.png" alt="Leaf's Deli">
-                    <h1 class="project-header">Flex-Trans</h1>
-                    <p class="project-description__text">Flex-Trans provide transportation on fully equipped and
-                        inspected
-                        wheelchair van.</p>
-                    <div class="project-button">
-                        <a href="https://flex-trans.com/" target="_blank">Visit</a>
+                    <div class="work-container__row__column">
+                        <img class="project-image" src="./src/images/nikiforov.jpg" alt="Leaf's Deli">
+
                     </div>
+                    <div class="work-container__row__column">
+                        <h1 class="project-header">Photographer Website</h1>
+                        <p class="project-description__text">Photographer's Website</p>
+                        <div class="project-button">
+                            <a href="https://nikiforov.netlify.app/" target="_blank">Visit</a></div>
 
+                    </div>
                 </div>
-                <div class="work-container__row">
-                    <img class="project-image" src="./src/images/nikiforov.jpg" alt="Leaf's Deli">
-                    <h1 class="project-header">Photographer Website</h1>
-                    <p class="project-description__text">Photographer's Website</p>
-                    <div class="project-button">
-                        <a href="https://nikiforov.netlify.app/" target="_blank">Visit</a></div>
 
-                </div>
 
             </div>
+
+
         </div>
+
         <div class="home-page__section">
             <div id="contact-container">
                 <h1 class="home-page-section__header">Contact us</h1>
@@ -221,7 +241,7 @@
                 </form>
                 <div class="send-button">send</div>
             </div>
-  
+
         </div>
         <div id="about-container">
             <h1 class="home-page-section__header">About us</h1>
