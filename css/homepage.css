@@ -173,25 +173,6 @@ body {
   background-color: #3b99e0;
   color: white; }
 
-.send-button {
-  display: flex;
-  justify-content: center;
-  border: 1px solid #3b99e0;
-  background-color: white;
-  color: #3b99e0;
-  font-size: 1.25rem;
-  letter-spacing: 1.5px;
-  border-radius: .3rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 1rem 0;
-  width: 10rem;
-  cursor: pointer; }
-
-.send-button:hover {
-  background-color: #3b99e0;
-  color: white; }
-
 .home-page__bottom {
   display: flex;
   flex-direction: column;
@@ -277,13 +258,20 @@ body {
   display: flex;
   flex-direction: column; }
   .work-container__row:nth-child(odd) {
+    display: flex;
     align-items: flex-start;
     text-align: start; }
   .work-container__row:nth-child(even) {
+    display: flex;
     align-items: flex-end;
     text-align: end; }
     .work-container__row:nth-child(even) > .project-header {
+      display: flex;
       justify-content: flex-end; }
+    .work-container__row:nth-child(even) > .work-container__row__column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
   .work-container__row:nth-child(odd) {
     align-items: flex-start;
     text-align: start; }
@@ -341,6 +329,25 @@ body {
 .contact-form > * {
   padding: 1.5rem;
   border-radius: .3rem; }
+
+.send-button {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #3b99e0;
+  background-color: white;
+  color: #3b99e0;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  border-radius: .3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  width: 10rem;
+  cursor: pointer; }
+
+.send-button:hover {
+  background-color: #3b99e0;
+  color: white; }
 
 .about-container {
   display: flex;
@@ -487,7 +494,7 @@ body {
     width: 100%;
     height: 100%; }
 
-  .contact-container {
-    margin: 5rem 10rem; } }
+  #contact-container {
+    padding: 5rem 10rem; } }
 
 /*# sourceMappingURL=homepage.css.map */
