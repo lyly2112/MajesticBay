@@ -485,6 +485,9 @@ body {
   .project-image {
     display: flex;
     width: 100%;
-    height: 100%; } }
+    height: 100%; }
+
+  .contact-container {
+    margin: 5rem 10rem; } }
 
 /*# sourceMappingURL=homepage.css.map */
