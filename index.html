@@ -11,21 +11,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./images/favicon.ico">
-    <script src="./js/toggleMenu.js"></script>
-    <!--
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript" src="./js/send-email.js"></script>
+    <script src="./js/sendEmail.js"></script>
+    <script src="./js/toggleMenu.js"></script>
     <script type="text/javascript">
-       (function(){
-          emailjs.init("user_xDZ9esqmDSPEDBBpAHYhJ");
-       })();
+    (function(){
+        emailjs.init("user_xDZ9esqmDSPEDBBpAHYhJ");
+    })();
     </script>
-    -->
 </head>
 
 <body>
-
     <div class="home-page-container">
         <div class="home-page__start-screen">
             <div class="navbar-container">
@@ -61,7 +58,7 @@
                     </nav>
                 </div>
             </div>
-            <img class="main-image" src="src/images/main-image.svg">
+            <div class="main-image" style="background-image: url(./src/images/main-image.svg);"></div>
             <div class="main-description">
                 <h1 class="home-page-section__header">Who we are</h1>
                 <p class="main-description__text">
@@ -175,7 +172,7 @@
                 <div class="work-container__rows">
                     <div class="work-container__row">
                         <div class="work-container__row__column">
-                            <img class="project-image" src="./src/images/leafsdeli.jpg" alt="Leaf's Deli">
+                            <div class="project-image" style="background-image: url('./src/images/leafsdeli.jpg');"></div>
                         </div>
                         <div class="work-container__row__column">
                             <h1 class="project-header">Leaf's Deli</h1>
@@ -190,7 +187,7 @@
                     </div>
                     <div class="work-container__row">
                         <div class="work-container__row__column">
-                            <img class="project-image" src="./src/images/flex-trans.png" alt="Leaf's Deli">
+                            <div class="project-image" style="background-image: url('./src/images/flex-trans.png');"></div>
                         </div>
                         <div class="work-container__row__column">
                             <h1 class="project-header">Flex-Trans</h1>
@@ -204,7 +201,7 @@
                     </div>
                     <div class="work-container__row">
                         <div class="work-container__row__column">
-                            <img class="project-image" src="./src/images/nikiforov.jpg" alt="Leaf's Deli">
+                            <div class="project-image" style="background-image: url('./src/images/nikiforov.jpg');"></div>
                         </div>
                         <div class="work-container__row__column">
                             <h1 class="project-header">Photographer Website</h1>
