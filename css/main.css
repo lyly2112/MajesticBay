@@ -354,7 +354,7 @@ body {
   margin: 1rem 10rem;
   text-align: center; }
 
-.services-container {
+#services-container {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
@@ -402,7 +402,7 @@ body {
 .internal-description {
   display: flex; }
 
-.works-container {
+#works-container {
   display: flex;
   flex-direction: column;
   padding: 5rem; }

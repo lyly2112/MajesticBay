@@ -337,7 +337,7 @@ body {
   text-align: center;
 }
 
-.services-container {
+#services-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,7 +436,7 @@ body {
   display: flex;
 }
 
-.works-container {
+#works-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
