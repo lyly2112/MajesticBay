@@ -466,18 +466,19 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-  padding: 5rem 5rem;
-  align-items: center; }
+  padding: 1rem; }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  line-height: 0.5rem;
-  width: 100%; }
+  align-items: center;
+  line-height: 0.5rem; }
 
 .contact-form > * {
+  display: flex;
   padding: 1.5rem;
-  border-radius: .3rem; }
+  border-radius: .3rem;
+  width: 80%; }
 
 .send-button {
   display: flex;
@@ -491,8 +492,7 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   margin: 1rem 0;
-  width: 10rem;
-  cursor: pointer; }
+  width: 10rem; }
 
 .send-button:hover {
   background-color: #3b99e0;
