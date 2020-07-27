@@ -351,14 +351,14 @@ body {
 .home-page-section__text {
   display: flex;
   justify-content: center;
-  margin: 1rem 10rem;
+  margin: 1rem;
   text-align: center; }
 
 #services-container {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-  padding: 5rem; }
+  padding: 1rem; }
 
 .services-container__internal {
   display: flex;
@@ -522,14 +522,14 @@ body {
   flex-direction: row;
   justify-content: space-between;
   height: 20rem;
-  padding: 3rem;
+  padding: 1rem;
   color: white;
   background-color: #63687D;
   line-height: 2rem; }
 
 .footer__column {
   display: flex;
-  margin: 1rem 3rem;
+  margin: 1rem;
   flex-direction: column; }
 
 .footer__header {
